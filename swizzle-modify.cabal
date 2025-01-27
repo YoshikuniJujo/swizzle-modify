@@ -6,7 +6,9 @@ cabal-version: 2.2
 
 name:           swizzle-modify
 version:        0.1.0.0
+synopsis:       Swizzle modify functions
 description:    Please see the README on GitHub at <https://github.com/YoshikuniJujo/swizzle-modify#readme>
+category:       Data
 homepage:       https://github.com/YoshikuniJujo/swizzle-modify#readme
 bug-reports:    https://github.com/YoshikuniJujo/swizzle-modify/issues
 author:         Yoshikuni Jujo
@@ -15,7 +17,7 @@ copyright:      (c) 2025 Yoshikuni Jujo
 license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
-extra-source-files:
+extra-doc-files:
     README.md
     CHANGELOG.md
 
@@ -41,9 +43,9 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
-    , swizzle
-    , swizzle-set
-    , template-haskell
+    , swizzle <1
+    , swizzle-set <1
+    , template-haskell <3
   default-language: Haskell2010
 
 test-suite swizzle-modify-test
@@ -58,8 +60,8 @@ test-suite swizzle-modify-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , swizzle
+    , swizzle <1
     , swizzle-modify
-    , swizzle-set
-    , template-haskell
+    , swizzle-set <1
+    , template-haskell <3
   default-language: Haskell2010

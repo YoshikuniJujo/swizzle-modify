@@ -6,7 +6,9 @@ author:              "Yoshikuni Jujo"
 maintainer:          "yoshikuni.jujo@gmail.com"
 copyright:           "(c) 2025 Yoshikuni Jujo"
 
-extra-source-files:
+extra-source-files: []
+
+extra-doc-files:
 - README.md
 - CHANGELOG.md
 
@@ -21,9 +23,9 @@ description:         Please see the README on GitHub at <https://github.com/Yosh
 
 dependencies:
 - base >= 4.7 && < 5
-- template-haskell
-- swizzle
-- swizzle-set
+- template-haskell < 3
+- swizzle < 1
+- swizzle-set < 1
 
 ghc-options:
 - -Wall
